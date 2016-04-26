@@ -12,7 +12,7 @@ viewBox="0 0 100000 70000"
    <missing-glyph><path d="M0 0z"/></missing-glyph>
    <glyph unicode=" " horiz-adv-x="154"></glyph>
   </font>
-  <font id="FontID1" horiz-adv-x="612" font-variant="normal" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+  <font id="FontID1" horiz-adv-x="612" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
 	<font-face 
 		font-family="Myriad Pro">
 	</font-face>
@@ -56,7 +56,6 @@ viewBox="0 0 100000 70000"
    <glyph unicode="e" horiz-adv-x="591"><path d="M132.002 230.006l409.989 0c1.00159,8.99539 1.00159,16.9892 1.00159,24.0003 0,151.996 -87.9885,274 -240.986,274 -143,0 -248.016,-120.002 -248.016,-270.013 0,-160.991 116.014,-269.994 258.013,-269.994 98.0044,0 160.991,39.0052 212.998,97.0028l-48.0006 42.9927c-42.01,-43.9943 -91.9949,-73.0025 -162.994,-73.0025 -91.0122,0 -171.007,63.0055 -182.005,175.013zm0 56.996c9.99698,100.99 77.9915,175.996 168.002,175.996 102.993,0 157.004,-81.9979 164.997,-175.996l-332.999 0z"/></glyph>
    <glyph unicode="T" horiz-adv-x="660"><path d="M232.995 0l193.997 0 0 530.002 210.006 0 0 169.996 -614.009 0 0 -169.996 210.006 0 0 -530.002z"/></glyph>
    <glyph unicode="C" horiz-adv-x="729"><path d="M399.004 -14.0046c155,0 244.005,67.0069 309.999,157.995l-145.994 104.001c-42.0138,-50.9987 -85.0189,-84.9978 -158.016,-84.9978 -97.99,0 -167.001,82.0028 -167.001,187.016l0 1.98258c0,102.018 69.0106,185.013 167.001,185.013 67.0069,0 113.007,-31.9954 152.996,-82.0028l146.015 113.007c-62.0083,85.9891 -154.008,145.994 -297.007,145.994 -211.988,0 -368.992,-159.998 -368.992,-363.993l0 -2.00367c0,-209.014 160.99,-362.01 360.998,-362.01z"/></glyph>
-   <glyph unicode="/" horiz-adv-x="520"><path d="M427.001 798.001l-452.002 -926.002 105.001 0 451.999 926.002 -104.998 0z"/></glyph>
    <glyph unicode="b" horiz-adv-x="675"><path d="M406.006 -12.0002c127.986,0 238.996,106.994 238.996,282.997l0 2.00003c0,173.011 -111.01,280.004 -240.004,280.004 -80.9934,0 -126.994,-39.0085 -164.003,-84.0013l0 260.996 -190.003 0 0 -729.996 190.003 0 0 66.001c35.0084,-41.0085 83.0092,-78.0012 165.01,-78.0012zm-59.0088 158.995c-60.9931,0 -110.002,51.0087 -110.002,123.01l0 2.00003c0,70.9932 49.0086,122.002 110.002,122.002 62.001,0 111.01,-51.0087 111.01,-122.002l0 -2.00003c0,-73.009 -49.0086,-123.01 -111.01,-123.01z"/></glyph>
    <glyph unicode="s" horiz-adv-x="513"><path d="M266.006 -11.9957c131.992,0 221,62.0015 221,180.992l0 1.99714c0,105.011 -85.0008,142.003 -192.009,172.012 -57.0022,16.995 -88.003,26.9936 -88.003,47.9958l0 1.99714c0,14.9979 15.0108,26.0015 44.0015,26.0015 43.0094,0 104.006,-19.005 160.003,-50.0058l65.0037 120.009c-62.0015,39.9943 -144,62.9936 -222.997,62.9936 -125.008,0 -217.005,-63.9987 -217.005,-178.995l0 -1.99714c0,-109.005 85.0008,-145.005 191.996,-173.004 57.0022,-16.0029 86.998,-24.9965 86.998,-45.9986l0 -1.99714c0,-19.005 -14.9979,-29.0036 -47.9958,-29.0036 -55.9972,0 -124.003,21.0022 -186.005,62.0015l-70.9951 -114.997c75.0023,-54.0001 165.002,-80.0015 256.008,-80.0015z"/></glyph>
    <glyph unicode="”" horiz-adv-x="445"><path d="M250.992 507.988l12.0085 -34.9946c75.9934,17.0077 110.009,55.9965 110.009,137.015l0 89.9861 -91.0169 0 0 -104.984 35.9996 0c4.02,-43.0088 -16.9819,-69.0099 -66.9999,-87.0226zm-199.995 0l12.0085 -34.9946c75.9934,17.0077 110.988,55.9965 110.988,137.015l0 89.9861 -91.9961 0 0 -104.984 35.9996 0c3.99423,-43.0088 -17.0077,-69.0099 -66.9999,-87.0226z"/></glyph>
@@ -111,8 +110,8 @@ viewBox="0 0 100000 70000"
     .str0 {stroke:#2B2A29;stroke-width:105.83}
     .str4 {stroke:#EFE1D8;stroke-width:105.83}
     .str3 {stroke:#2B2A29;stroke-width:70.56}
+    .str8 {stroke:#2B2A29;stroke-width:70.56}
     .str1 {stroke:#2B2A29;stroke-width:211.67}
-    .str8 {stroke:#2B2A29;stroke-width:211.67}
     .str6 {stroke:#2B2A29;stroke-width:101.6}
     .str2 {stroke:#2B2A29;stroke-width:35.28}
     .str7 {stroke:#2B2A29;stroke-width:17.64}
@@ -152,6 +151,7 @@ viewBox="0 0 100000 70000"
     .fnt17 {font-weight:normal;font-size:282.22px;font-family:'Bebas Neue'}
     .fnt20 {font-weight:normal;font-size:282.22px;font-family:'Bebas Neue'}
     .fnt35 {font-weight:bold;font-size:282.22px;font-family:'RO Gotham'}
+    .fnt44 {font-weight:bold;font-size:282.22px;font-family:'RO Gotham'}
     .fnt22 {font-weight:900;font-size:282.22px;font-family:'RO Gotham'}
     .fnt25 {font-weight:900;font-size:282.22px;font-family:'RO Gotham'}
     .fnt28 {font-weight:900;font-size:282.22px;font-family:'RO Gotham'}
@@ -5136,7 +5136,7 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <text x="65753" y="47864"  class="fil15 fnt10">Piața muncii</text>
   <line class="fil2 str0" x1="63329" y1="53201" x2="73066" y2= "53201" />
   <polygon class="fil4" points="73066,63056 63329,63056 63329,53884 73066,53884 "/>
-  <g id="_394592283712">
+  <g id="_394730099056">
    <text x="64900" y="55153"  class="fil15 fnt10">Protecție socială</text>
    <text x="65451" y="56085"  class="fil15 fnt10">și nivel de trai</text>
   </g>
@@ -5170,30 +5170,30 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <text x="77888" y="42040"  class="fil15 fnt10">IMM-uri</text>
   <text x="88875" y="32243"  class="fil15 fnt10">C</text>
   <text x="89442" y="32243"  class="fil15 fnt10">orupție</text>
-  <g id="_394696908304">
+  <g id="_394730088048">
    <text x="89283" y="35304"  class="fil14 fnt11">cazuri condamnări</text>
    <text x="89572" y="35643"  class="fil14 fnt11">definitive DNA</text>
   </g>
   <text x="89571" y="51088"  class="fil15 fnt10">Presă</text>
   <text x="90196" y="53408"  class="fil14 fnt11">unități </text>
   <text x="89630" y="53720"  class="fil14 fnt14">radio tv active</text>
-  <g id="_394696905776">
+  <g id="_394730084400">
    <text x="88827" y="57738"  class="fil15 fnt15">Siguranța</text>
    <text x="88220" y="58669"  class="fil15 fnt15">cetățeanului</text>
   </g>
-  <g id="_394696901360">
+  <g id="_393087526272">
    <text x="88290" y="61158"  class="fil14 fnt14">persoane condamnate definitiv</text>
    <text x="88713" y="61496"  class="fil14 fnt14">la suta de mii de locuitori</text>
   </g>
-  <g id="_394696899888">
+  <g id="_393087524480">
    <text x="87832" y="25786"  class="fil14 fnt14">independență de</text>
    <text x="87961" y="26124"  class="fil14 fnt14">bugetul central</text>
   </g>
-  <g id="_394696894064">
+  <g id="_393087523104">
    <text x="91411" y="25786"  class="fil14 fnt14">număr maxim de posturi</text>
    <text x="91461" y="26124"  class="fil14 fnt14">în administrația publică</text>
   </g>
-  <g id="_394696890320">
+  <g id="_393087590144">
    <text x="89102" y="40991"  class="fil15 fnt15">Eficiența</text>
    <text x="87075" y="41923"  class="fil15 fnt15">sistemului judiciar</text>
   </g>
@@ -5205,23 +5205,21 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <line class="fil2 str3" x1="79382" y1="36260" x2="79382" y2= "38520" />
   <line class="fil2 str3" x1="79382" y1="43067" x2="79382" y2= "44889" />
   <line class="fil2 str3" x1="79382" y1="51912" x2="79382" y2= "53734" />
-  <line class="fil2 str3" x1="79382" y1="26964" x2="79382" y2= "29224" />
   <line class="fil2 str3" x1="79382" y1="59445" x2="79382" y2= "61705" />
   <line class="fil2 str3" x1="68197" y1="59525" x2="68197" y2= "61786" />
   <line class="fil2 str3" x1="68197" y1="48827" x2="68197" y2= "51088" />
-  <line class="fil2 str3" x1="79382" y1="23392" x2="79382" y2= "25652" />
   <line class="fil2 str3" x1="68197" y1="23392" x2="68197" y2= "25652" />
   <text x="66450" y="22460"  class="fil15 fnt15">Educație</text>
   <text x="65050" y="25250"  class="fil14 fnt14">profesori</text>
   <text x="64337" y="24475" id="profi" class="fil14 fnt16">3456</text>
   <text x="70339" y="25220"  class="fil14 fnt14">școli</text>
   <text x="69642" y="24468" id="scoli" class="fil14 fnt16">345</text>
-  <g id="_394696872400">
+  <g id="_393087578528">
    <text x="81599" y="24984"  class="fil14 fnt14">km de</text>
    <text x="80610" y="25322"  class="fil14 fnt14">străzi modernizate</text>
    <text x="80935" y="24473" id="lsom" class="fil14 fnt16">345</text>
   </g>
-  <g id="_394696871248">
+  <g id="_393087577088">
    <text x="65185" y="41112"  class="fil14 fnt14">hectare</text>
    <text x="64689" y="40400" id="pad" class="fil14 fnt16">345</text>
   </g>
@@ -5229,25 +5227,15 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <text x="80581" y="28882"  class="fil14 fnt14">drumuri de pământ</text>
   <text x="80935" y="27930" id="ldpam" class="fil14 fnt16">345</text>
   <text x="69642" y="40400" id="verde" class="fil14 fnt16">345</text>
-  <g id="_394696930928">
-   <text x="76485" y="24984"  class="fil14 fnt14">km de</text>
-   <text x="75667" y="25322"  class="fil14 fnt14">străzi orășenești</text>
-   <text x="75504" y="24473" id="lso" class="fil14 fnt16">3245</text>
-  </g>
-  <g id="_394696928016">
-   <text x="76485" y="28544"  class="fil14 fnt14">km de</text>
-   <text x="75720" y="28882"  class="fil14 fnt14">drumuri publice</text>
-   <text x="75504" y="27930" id="ldpub" class="fil14 fnt16">3245</text>
-  </g>
   <text x="75467" y="38047"  class="fil14 fnt14">ha de</text>
   <text x="76343" y="38047"  class="fil14 fnt14">fond funciar</text>
   <text x="76255" y="38047"  class="fil14 fnt17">  </text>
   <text x="76573" y="37481" id="ff" class="fil14 fnt18">1</text>
-  <text x="80317" y="38016"  class="fil14 fnt19">ha de</text>
-  <text x="81148" y="38016"  class="fil14 fnt19">suprafață</text>
-  <text x="82559" y="38016"  class="fil14 fnt19">agricolă</text>
-  <text x="81105" y="38016"  class="fil14 fnt20"> </text>
-  <text x="82515" y="38016"  class="fil14 fnt20"> </text>
+  <text x="80317" y="38052"  class="fil14 fnt19">ha de</text>
+  <text x="81148" y="38052"  class="fil14 fnt19">suprafață</text>
+  <text x="82559" y="38052"  class="fil14 fnt19">agricolă</text>
+  <text x="81105" y="38052"  class="fil14 fnt20"> </text>
+  <text x="82515" y="38052"  class="fil14 fnt20"> </text>
   <text x="81806" y="37467" id="agr" class="fil14 fnt21">1</text>
   <text x="77389" y="35298"  class="fil14 fnt22">valoarea</text>
   <text x="78667" y="35298"  class="fil14 fnt22">producției</text>
@@ -5260,19 +5248,19 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <line class="fil2 str3" x1="68197" y1="33395" x2="68197" y2= "35656" />
   <text x="64337" y="34525" id="medici" class="fil14 fnt24">3456</text>
   <text x="69697" y="34525" id="spitale" class="fil14 fnt24">36</text>
-  <g id="_394696911504">
+  <g id="_393087567488">
    <text x="64719" y="50542"  class="fil14 fnt25">în câmpul</text>
    <text x="66197" y="50542"  class="fil14 fnt25">muncii</text>
    <text x="66119" y="50542"  class="fil14 fnt25"> </text>
    <text x="64705" y="50074" id="campul" class="fil14 fnt24">3431</text>
   </g>
-  <g id="_394696909712">
+  <g id="_393087566048">
    <text x="64662" y="61345"  class="fil14 fnt25">salariul</text>
    <text x="65743" y="61345"  class="fil14 fnt25">mediu net</text>
    <text x="65699" y="61345"  class="fil14 fnt26"> </text>
    <text x="64705" y="60708" id="salariu" class="fil14 fnt27">3431</text>
   </g>
-  <g id="_394672172032">
+  <g id="_393087564064">
    <text x="69139" y="61325"  class="fil14 fnt28">pensie</text>
    <text x="70124" y="61325"  class="fil14 fnt28">medie netă</text>
    <text x="70080" y="61325"  class="fil14 fnt29"> </text>
@@ -5283,11 +5271,11 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <text x="68129" y="58630"  class="fil14 fnt32"> </text>
   <text x="68173" y="58630"  class="fil14 fnt32"> </text>
   <text x="68010" y="57993" id="pensionari" class="fil14 fnt33">1</text>
-  <g id="_394672158048">
+  <g id="_393087561120">
    <text x="69955" y="50537"  class="fil14 fnt34">șomeri</text>
    <text x="69221" y="50075" id="som" class="fil14 fnt33">3431</text>
   </g>
-  <g id="_394672156864">
+  <g id="_393087559392">
    <text x="66817" y="44090" id="kmapa" class="fil14 fnt33">3445</text>
    <text x="67344" y="44557"  class="fil14 fnt35">km de rețea</text>
    <text x="69056" y="44557"  class="fil14 fnt35"> </text>
@@ -5298,14 +5286,12 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <polygon class="fil2 str0" points="18055,5472 17839,5377 18055,5282 17987,5167 17798,5305 17824,5074 17692,5074 17718,5305 17529,5167 17461,5282 17676,5377 17461,5472 17529,5587 17718,5449 17692,5680 17824,5680 17798,5449 17987,5587 "/>
   <text x="9228" y="7465" id="top-text" class="fil25 str6 fnt36">9</text>
   <text x="36117" y="7279" id="jud-title" class="fil25 str6 fnt36">ALBA</text>
-  <g id="_394672151360">
-   <text x="67864" y="28707"  class="fil14 fnt34">elevi</text>
-   <text x="66176" y="27932" id="elevi" class="fil14 fnt33">345678</text>
-  </g>
-  <text x="94091" y="5073" id="PIB-text" class="fil26 fnt37">P</text>
+  <text x="67864" y="28707"  class="fil14 fnt34">elevi</text>
+  <text x="66176" y="27932" id="elevi" class="fil14 fnt33">345678</text>
+  <text x="80153" y="5073" id="PIB-text" class="fil26 fnt37">P</text>
   <rect class="fil27 str7" x="6102" y="2938" width="13938" height="6515"/>
   <rect class="fil27 str7" x="22963" y="2973" width="35753" height="6515"/>
-  <g id="_394672146592">
+  <g id="_393087555264">
    <text x="75590" y="61160"  class="fil14 fnt34">unități locale active </text>
    <g transform="matrix(1 0 0 1 27016.5 25692.6)">
     <text x="48898" y="35000" id="biz" class="fil14 fnt33">7811</text>
@@ -5315,19 +5301,19 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <g transform="matrix(1 0 0 1 31799.4 25694.8)">
    <text x="48309" y="35000" id="crpib" class="fil14 fnt33">5.40%</text>
   </g>
-  <g id="_394672139680">
+  <g id="_393087550528">
    <text x="76557" y="53427"  class="fil14 fnt34">PC-uri</text>
    <g transform="matrix(1 0 0 1 27005.9 17967.4)">
     <text x="48695" y="35000" id="pc" class="fil14 fnt33">6106</text>
    </g>
   </g>
-  <g id="_394672131488">
+  <g id="_393087550112">
    <text x="80773" y="53427"  class="fil14 fnt34">unități școlare</text>
    <g transform="matrix(1 0 0 1 31830.1 17960)">
     <text x="49199" y="35000" id="scoli2" class="fil14 fnt33">141</text>
    </g>
   </g>
-  <g id="_394672127200">
+  <g id="_393087547808">
    <text x="77426" y="50661"  class="fil14 fnt34">conexiuni internet în bandă </text>
    <text x="78801" y="50973"  class="fil14 fnt38"> </text>
    <text x="77990" y="50973"  class="fil14 fnt39">largă,</text>
@@ -5336,13 +5322,13 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
     <text x="48268" y="35000" id="net" class="fil14 fnt40">66548</text>
    </g>
   </g>
-  <g id="_394672125760">
+  <g id="_393087547744">
    <text x="80570" y="44562"  class="fil14 fnt39">cu 10-49 salariați</text>
    <g transform="matrix(1 0 0 1 31704.8 9094.88)">
     <text x="49011" y="35000" id="imm1049" class="fil14 fnt40">788</text>
    </g>
   </g>
-  <g id="_394672120864">
+  <g id="_393087545600">
    <text x="75932" y="44564"  class="fil14 fnt39">cu 0-9 salariați</text>
    <g transform="matrix(1 0 0 1 27004.9 9097)">
     <text x="48695" y="35000" id="imm09" class="fil14 fnt40">6610</text>
@@ -5373,9 +5359,25 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <text x="87759" y="23317"  class="fil15 fnt42">administrativ</text>
   <text x="93011" y="23317"  class="fil15 fnt42">ă</text>
   <text x="71206" y="16955"  class="fil14 fnt43">Pentru metodologia completă, consultați www.banipublici.ro, secțiunea „documente”</text>
-  <polygon class="fil27 str8" points="96341,63793 62553,63793 62553,11171 96341,11171 "/>
-  <polygon class="fil2 str0" points="96079,63374 85254,63374 85254,17664 96079,17664 "/>
-  <polygon class="fil2 str0" points="84871,63374 74046,63374 74046,17664 84871,17664 "/>
-  <polygon class="fil2 str0" points="73518,63374 62693,63374 62693,17664 73518,17664 "/>
+  <line class="fil27 str8" x1="79382" y1="26964" x2="79382" y2= "29224" />
+  <line class="fil27 str8" x1="79382" y1="23392" x2="79382" y2= "25652" />
+  <g transform="matrix(1 0 0 1 26484.9 -10016)">
+   <text x="50000" y="35000"  class="fil26 fnt44">km de</text>
+  </g>
+  <g transform="matrix(1 0 0 1 25666.9 -9678.03)">
+   <text x="50000" y="35000"  class="fil26 fnt44">străzi orășenești</text>
+  </g>
+  <g transform="matrix(1 0 0 1 26882.2 -10522.9)">
+   <text x="50000" y="35000" id="lso" class="fil26 fnt40">887</text>
+  </g>
+  <g transform="matrix(1 0 0 1 26484.9 -6456.04)">
+   <text x="50000" y="35000"  class="fil26 fnt44">km de</text>
+  </g>
+  <g transform="matrix(1 0 0 1 25719.9 -6118.04)">
+   <text x="50000" y="35000"  class="fil26 fnt44">drumuri publice</text>
+  </g>
+  <g transform="matrix(1 0 0 1 26878 -7042.33)">
+   <text x="50000" y="35000" id="ldpub" class="fil26 fnt40">2391</text>
+  </g>
  </g>
 </svg>

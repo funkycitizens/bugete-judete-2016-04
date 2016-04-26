@@ -6,7 +6,7 @@ function loadTables() {
   return new Promise((resolve) => {
     let data_tsv = fs.readFileSync('data.tsv', {encoding: 'utf8'})
     let data = d3.tsv.parse(data_tsv)
-    let judete = []
+    let judete_years = []
     let buffer = null
     let judet = null
     data.forEach(function(row) {
@@ -22,13 +22,28 @@ function loadTables() {
     flush()
 
     function flush() {
-      judete.push({
+      judete_years.push({
         name: judet,
         years: buffer,
       })
       buffer = []
     }
 
+    let indicators = {}
+    d3.tsv.parse(fs.readFileSync('indicators.tsv', {encoding: 'utf8'})).forEach((row) => {
+      indicators[row.n] = row
+    })
+
+    let judete = d3.range(42).map((i) => {
+      let ind = indicators[i+1]
+      delete ind.jud
+      delete ind.n
+      return {
+        name: judete_years[i].name,
+        years: judete_years[i].years,
+        indicators: ind,
+      }
+    })
     resolve(judete)
   })
 }
@@ -45,7 +60,7 @@ function withJsdom(func) {
   })
 }
 
-async function renderPage(master) {
+async function renderPage(master, judet) {
   return await withJsdom((window) => {
     let d3 = window.d3
     let zebox = d3.select('body').append('div')
@@ -55,6 +70,11 @@ async function renderPage(master) {
     let svgSrc = master.slice(headerOffset)
     zebox.html(svgSrc)
 
+    for(let key of Object.keys(judet.indicators)) {
+      let value = judet.indicators[key]
+      zebox.select(`#${key}`).html(value)
+    }
+
     return header + zebox.html()
   })
 }
@@ -62,7 +82,7 @@ async function renderPage(master) {
 async function main() {
   let judete = await loadTables()
   let master = fs.readFileSync('master.svg', {encoding: 'utf8'})
-  let out = await renderPage(master)
+  let out = await renderPage(master, judete[0])
   fs.writeFileSync('out.svg', out)
 }
 

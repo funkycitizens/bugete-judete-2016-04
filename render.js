@@ -1,6 +1,7 @@
 import fs from 'fs'
 import jsdom from 'jsdom'
 import d3 from 'd3'
+import chart from './chart.js'
 
 function loadTables() {
   return new Promise((resolve) => {
@@ -69,6 +70,11 @@ async function renderPage(master, judet) {
     let header = master.slice(0, headerOffset)
     let svgSrc = master.slice(headerOffset)
     zebox.html(svgSrc)
+
+    let plot = zebox.select('svg').append('g')
+      .attr('transform', 'translate(4780,17710)')
+
+    chart(d3, plot, judet, {width: 560, height: 343})
 
     for(let key of Object.keys(judet.indicators)) {
       let value = judet.indicators[key]

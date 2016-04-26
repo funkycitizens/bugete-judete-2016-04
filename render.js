@@ -91,8 +91,11 @@ async function renderPage(master, judet) {
 async function main() {
   let judete = await loadTables()
   let master = fs.readFileSync('master.svg', {encoding: 'utf8'})
-  let out = await renderPage(master, judete[0])
-  fs.writeFileSync(`out/${judete[0].slug}.svg`, out)
+  for(let judet of judete) {
+    console.log(judet.slug)
+    let out = await renderPage(master, judet)
+    fs.writeFileSync(`out/${judet.slug}.svg`, out)
+  }
 }
 
 main().catch((e) => { console.error(e.stack || e) })

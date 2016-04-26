@@ -37,10 +37,13 @@ function loadTables() {
 
     let judete = d3.range(42).map((i) => {
       let ind = indicators[i+1]
+      let slug = ind.slug
+      delete ind.slug
       delete ind.jud
       delete ind.n
       return {
         name: judete_years[i].name,
+        slug: slug,
         years: judete_years[i].years,
         indicators: ind,
       }
@@ -89,7 +92,7 @@ async function main() {
   let judete = await loadTables()
   let master = fs.readFileSync('master.svg', {encoding: 'utf8'})
   let out = await renderPage(master, judete[0])
-  fs.writeFileSync('out.svg', out)
+  fs.writeFileSync(`out/${judete[0].slug}.svg`, out)
 }
 
 main().catch((e) => { console.error(e.stack || e) })

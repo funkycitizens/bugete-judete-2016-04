@@ -89,7 +89,7 @@ export default function chart_js(d3, container, judet) {
   eachYear.append('g')
       .attr('transform', `translate(${yearWidth/2 + 150},${height + 1200})`)
       .append('text')
-        .attr('style', 'font: 700px sans-serif; text-anchor: middle')
+        .attr('style', 'font-size: 700px; font-family: "RO Gotham", sans-serif; text-anchor: middle')
         .text((d) => d)
 
   svg.append('g')
@@ -97,7 +97,7 @@ export default function chart_js(d3, container, judet) {
       .call(yAxis)
 
   svg.selectAll('.axis text')
-      .attr('style', 'font: 400px sans-serif')
+      .attr('style', 'font-size: 400px; font-family: "RO Gotham", sans-serif')
       .attr('transform', 'translate(-4,6)')
       .attr('x', 100)
       .attr('y', 250)

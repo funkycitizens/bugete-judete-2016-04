@@ -24,20 +24,17 @@ async function download(url) {
 
 function renderJudet(judet) {
 
-  let width = 560
-  let height = 345
-
   let zebox = d3.select('#zebox')
   zebox.html('')
   var svg = zebox.append('svg')
       .attr('xmlns', 'http://www.w3.org/2000/svg')
-      .attr('width', `${width}mm`)
-      .attr('height', `${height}mm`)
-      .attr('viewBox', `0 0 ${width} ${height}`)
+      .attr('width', `560mm`)
+      .attr('height', `345mm`)
+      .attr('viewBox', `0 0 560 345`)
     .append('g')
-      .attr('transform', 'scale(.2)')
+      .attr('transform', 'scale(.004)')
 
-  module['chart.js'].default(d3, svg, judet, {width, height})
+  module['chart.js'].default(d3, svg, judet)
   let src = '<?xml version="1.0" encoding="UTF-8"?>\n' + zebox.html()
 
   //d3.select('#download').append('p')

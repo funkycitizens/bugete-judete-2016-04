@@ -1,6 +1,8 @@
-export default function chart_js(d3, container, judet, {width, height}) {
+export default function chart_js(d3, container, judet) {
 
-  var padding = 2
+  let width = 56000
+  let height = 34500
+  var padding = 200
 
   var cols = [
     'servicii_publice_generale',
@@ -53,10 +55,11 @@ export default function chart_js(d3, container, judet, {width, height}) {
   x.domain(cols)
   y.domain([0, d3.max(years, (y) => d3.max(cols, (c) => +judet.years[y][c]))])
 
-  svg.selectAll('.year')
+  let eachYear = svg.selectAll('.year')
       .data(years)
     .enter().append('g')
-      .each(function(g, i) {
+
+  eachYear.each(function(g, i) {
         var year = judet.years[years[i]]
         d3.select(this)
           .attr('transform', `translate(${yearWidth*i},0)`)
@@ -70,27 +73,35 @@ export default function chart_js(d3, container, judet, {width, height}) {
             .attr('y', (d) => y(+year[d]))
             .attr('height', (d) => height-2*padding - y(+year[d]))
       })
-      .append('g')
-        .attr('transform', `translate(0,${height})`)
-      .append('g')
-        .attr('transform', 'scale(.01)')
-      .append('path')
-        .attr('style', 'stroke:#373435;stroke-width:17.64; fill:none;fill-rule:nonzero')
-        .attr('transform', 'translate(-7639.18,-3598.2182)')
-        .attr('d', 'm 12985,3600 c 0,83 -68,150 -151,150 m -5036,0 c -83,0 -150,-67 -150,-150 m 2518,109 -2368,41 m 2669,-41 c -83,0 -151,67 -151,151 0,-84 -67,-151 -150,-151 m 2668,41 -2367,-41')
+
+  eachYear
+    .append('g')
+      .attr('transform', `translate(450,${height - 200})`)
+    .append('g')
+      .attr('transform', 'scale(1.2)')
+    .append('path')
+      .attr('style', 'stroke:#373435;stroke-width:17.64; fill:none;fill-rule:nonzero')
+      .attr('transform', 'translate(-7639.18,-3598.2182)')
+      .attr('d', 'm 12985,3600 c 0,83 -68,150 -151,150 m -5036,0 c -83,0 -150,-67 -150,-150 m 2518,109 -2368,41 m 2669,-41 c -83,0 -151,67 -151,151 0,-84 -67,-151 -150,-151 m 2668,41 -2367,-41')
+
+  eachYear.append('g')
+      .attr('transform', `translate(400,${height - 200})`)
 
   svg.append('g')
       .attr('class', 'y axis')
       .call(yAxis)
 
   svg.selectAll('.axis text')
-      .attr('style', 'font: 10px sans-serif; text-anchor: end')
+      .attr('style', 'font: 400px sans-serif')
       .attr('transform', 'translate(-4,6)')
+      .attr('x', 100)
+      .attr('y', 250)
 
   svg.selectAll('.x.axis path').remove()
+  svg.selectAll('.axis .domain').remove()
 
-  svg.selectAll('.axis path').attr('style', 'fill: none; stroke: #000; shape-rendering: crispEdges')
-  svg.selectAll('.axis line').attr('style', 'fill: none; stroke: #000; shape-rendering: crispEdges')
+  svg.selectAll('.axis path').attr('style', 'stroke-width: 20px; fill: none; stroke: #000; shape-rendering: crispEdges')
+  svg.selectAll('.axis line').attr('style', 'stroke-width: 20px; fill: none; stroke: #000; shape-rendering: crispEdges')
 
   //function multiYearLine(c) {
   //  var coords = years.map((year, i) => {

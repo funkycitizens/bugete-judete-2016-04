@@ -24,17 +24,17 @@ export default function chart_js(d3, container, judet) {
   var yearSlotPadding = yearWidth/20
 
   var color = {
-    aparare: '#44529F',
-    asigurari_sociale: '#D95F7E',
-    mediu: '#46876F',
-    invatamant: '#9FCCB2',
-    sanatate: '#9295CA',
-    dezvoltare_locuinte_mediu: '#E5C53D',
-    servicii_publice_generale: '#84B5DF',
-    cultura: '#782764',
-    energie: '#E6763C',
-    transporturi: '#52B9BB',
-    altele: '#B2B2B2',
+    aparare: '#4B57A1',
+    asigurari_sociale: '#DA6381',
+    mediu: '#4C8A72',
+    invatamant: '#A0CDB3',
+    sanatate: '#9497CA',
+    dezvoltare_locuinte_mediu: '#E5C744',
+    servicii_publice_generale: '#86B6E0',
+    cultura: '#7B3268',
+    energie: '#E67943',
+    transporturi: '#55BABC',
+    altele: '#B4B4B4',
   }
 
 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+html, body, #zebox { width: 100%; height: 100%; margin: 0; }
+</style>
+<body>
+<div id="zebox"></div>
+<div id="download" style="position: absolute; top: 0"></div>
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.11.0/fetch.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser-polyfill.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+<script>module={}; exports={}</script>
+<script type="text/babel" src="chart.js"></script>
+<script>module['chart.js'] = exports</script>
+<script type="text/babel">
+
+async function download(url) {
+  let res = await fetch(url)
+  return res.text()
+}
+
+function renderJudet(judet) {
+
+  let width = 560
+  let height = 345
+
+  let zebox = d3.select('#zebox')
+  zebox.html('')
+  var svg = zebox.append('svg')
+      .attr('xmlns', 'http://www.w3.org/2000/svg')
+      .attr('width', `${width}mm`)
+      .attr('height', `${height}mm`)
+      .attr('viewBox', `0 0 ${width} ${height}`)
+    .append('g')
+      .attr('transform', 'scale(.2)')
+
+  module['chart.js'].default(d3, svg, judet, {width, height})
+  let src = '<?xml version="1.0" encoding="UTF-8"?>\n' + zebox.html()
+
+  //d3.select('#download').append('p')
+  //  .append('a')
+  //    .attr('href', `data:application/octet-stream,${encodeURIComponent(src)}`)
+  //    .attr('download', 'thing.svg')
+  //    .text('thing.svg')
+
+}
+
+d3.tsv('data.tsv', function(error, data) {
+  let judete = []
+  let buffer = null
+  let judet = null
+  data.forEach(function(row) {
+    if(row.judet) {
+      if(buffer) flush()
+      buffer = {}
+      judet = row.judet
+    }
+    delete row.judet
+    buffer[row.an] = row
+    delete row.an
+  })
+  flush()
+
+  function flush() {
+    judete.push({
+      name: judet,
+      years: buffer,
+    })
+    buffer = []
+  }
+
+  renderJudet(judete[0])
+})
+
+async function main() {
+  let master = await download('master.svg')
+}
+
+//main().catch((e) => { console.error(e.stack || e) })
+
+</script>

@@ -5027,11 +5027,11 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
   <path class="fil16" d="M65817 15089c106,-177 335,23 190,170 -86,88 -271,105 -382,80 -261,-58 -408,-226 -536,-450 -33,-59 -125,-6 -91,53 132,231 281,407 542,483 173,50 431,45 565,-103 87,-95 82,-285 -15,-374 -110,-102 -296,-27 -364,88 -35,58 56,112 91,53z"/>
   <path class="fil16" d="M66629 14715c-155,148 -395,6 -314,-195 43,-108 147,-156 259,-172 321,-46 399,303 340,543 -99,401 -458,688 -865,702 -68,2 -68,108 0,106 377,-13 676,-207 863,-533 156,-271 224,-695 -97,-880 -217,-125 -605,1 -631,275 -28,298 318,421 519,229 50,-47 -25,-122 -74,-75z"/>
   <path class="fil2 str0" d="M67567 14060c0,141 -114,254 -254,254 -141,0 -255,-113 -255,-254 0,-141 114,-254 255,-254 140,0 254,113 254,254"/>
-  <text x="63820" y="5100" id="jud" class="fil14 fnt9">Județul xxxxxxxxxx</text>
-  <text x="63820" y="6687" id="pop" class="fil14 fnt9">xx locuitori</text>
-  <text x="63820" y="8274" id="orase" class="fil14 fnt9">xx orașe</text>
-  <text x="88756" y="6686" id="mun" class="fil14 fnt9">xx municipii</text>
-  <text x="89038" y="8273" id="comune" class="fil14 fnt9">xx comune </text>
+  <text x="63820" y="5100" id="jud-text" class="fil14 fnt9">Județul xxxxxxxxxx</text>
+  <text x="63820" y="6687" id="pop-text" class="fil14 fnt9">xx locuitori</text>
+  <text x="63820" y="8274" id="orase-text" class="fil14 fnt9">xx orașe</text>
+  <text x="88756" y="6686" id="mun-text" class="fil14 fnt9">xx municipii</text>
+  <text x="89038" y="8273" id="comune-text" class="fil14 fnt9">xx comune </text>
   <polygon class="fil1 str2" points="80153,5420 94971,5420 "/>
   <line class="fil2 str0" x1="80153" y1="5420" x2="94971" y2= "5420" />
   <polygon class="fil1 str2" points="80153,7113 94971,7113 "/>
@@ -5296,9 +5296,8 @@ PdDgWQP1QINnDdQD/z9vzVPF0/xtkgAAAABJRU5ErkJggg=="/>
    <text x="68671" y="44869"  class="fil14 fnt35"> cu apă</text>
   </g>
   <polygon class="fil2 str0" points="18055,5472 17839,5377 18055,5282 17987,5167 17798,5305 17824,5074 17692,5074 17718,5305 17529,5167 17461,5282 17676,5377 17461,5472 17529,5587 17718,5449 17692,5680 17824,5680 17798,5449 17987,5587 "/>
-  <text x="9228" y="7465" id="top" class="fil25 str6 fnt36">9</text>
-  <text x="11349" y="7465" id="top" class="fil25 str6 fnt36">/42</text>
-  <text x="36117" y="7279" id="jud_0" class="fil25 str6 fnt36">ALBA</text>
+  <text x="9228" y="7465" id="top-text" class="fil25 str6 fnt36">9</text>
+  <text x="36117" y="7279" id="jud-title" class="fil25 str6 fnt36">ALBA</text>
   <g id="_394672151360">
    <text x="67864" y="28707"  class="fil14 fnt34">elevi</text>
    <text x="66176" y="27932" id="elevi" class="fil14 fnt33">345678</text>

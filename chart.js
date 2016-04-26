@@ -49,7 +49,7 @@ export default function chart_js(d3, container, judet) {
       .orient('right')
       .ticks(3)
       .innerTickSize(width)
-      .tickFormat((d) => d ? d : '')
+      .tickFormat((d) => d ? d3.format(',')(d).replace(/,/g, ' ') : '')
 
   var svg = container.append('g')
       .attr('transform', `translate(${0},${paddingTop})`)

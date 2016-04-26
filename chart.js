@@ -100,7 +100,7 @@ export default function chart_js(d3, container, judet) {
       .attr('style', 'font-size: 400px; font-family: "RO Gotham", sans-serif')
       .attr('transform', 'translate(-4,6)')
       .attr('x', 100)
-      .attr('y', 250)
+      .attr('y', 500)
 
   svg.selectAll('.x.axis path').remove()
   svg.selectAll('.axis .domain').remove()

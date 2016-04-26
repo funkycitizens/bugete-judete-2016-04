@@ -1,8 +1,7 @@
 export default function chart_js(d3, container, judet) {
 
   let width = 56000
-  let height = 34500
-  var padding = 200
+  let height = 34200
 
   var cols = [
     'servicii_publice_generale',
@@ -18,7 +17,7 @@ export default function chart_js(d3, container, judet) {
     'altele',
   ]
   var years = [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]
-  var yearWidth = (width-2*padding)/years.length
+  var yearWidth = (width)/years.length
   var yearSlotLeft = yearWidth/20
 
   var color = {
@@ -40,17 +39,17 @@ export default function chart_js(d3, container, judet) {
       .rangeRoundBands([yearSlotLeft, yearWidth], .1)
 
   var y = d3.scale.linear()
-      .range([height-2*padding, 0])
+      .range([height, 0])
 
   var yAxis = d3.svg.axis()
       .scale(y)
       .orient('right')
       .ticks(3)
-      .innerTickSize(width-2*padding)
+      .innerTickSize(width)
       .tickFormat((d) => d ? d : '')
 
   var svg = container.append('g')
-      .attr('transform', `translate(${padding},${padding})`)
+      .attr('transform', `translate(${0},${0})`)
 
   x.domain(cols)
   y.domain([0, d3.max(years, (y) => d3.max(cols, (c) => +judet.years[y][c]))])
@@ -71,7 +70,7 @@ export default function chart_js(d3, container, judet) {
             .attr('x', (d) => x(d))
             .attr('width', x.rangeBand())
             .attr('y', (d) => y(+year[d]))
-            .attr('height', (d) => height-2*padding - y(+year[d]))
+            .attr('height', (d) => height - y(+year[d]))
       })
 
   eachYear
@@ -105,7 +104,7 @@ export default function chart_js(d3, container, judet) {
 
   //function multiYearLine(c) {
   //  var coords = years.map((year, i) => {
-  //    return [yearWidth*i + x(c), height-2*padding - y(+judet.years[year][c])]
+  //    return [yearWidth*i + x(c), height - y(+judet.years[year][c])]
   //  })
   //  return `M ${coords.join(' ')}`
   //}

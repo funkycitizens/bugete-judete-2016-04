@@ -30,46 +30,20 @@ function renderJudet(judet) {
       .attr('xmlns', 'http://www.w3.org/2000/svg')
       .attr('width', `560mm`)
       .attr('height', `345mm`)
-      .attr('viewBox', `0 0 560 345`)
+      .attr('viewBox', `0 0 56000 34500`)
     .append('g')
       .attr('transform', 'scale(.004)')
 
   module['chart.js'].default(d3, svg, judet)
-  let src = '<?xml version="1.0" encoding="UTF-8"?>\n' + zebox.html()
-
-  //d3.select('#download').append('p')
-  //  .append('a')
-  //    .attr('href', `data:application/octet-stream,${encodeURIComponent(src)}`)
-  //    .attr('download', 'thing.svg')
-  //    .text('thing.svg')
 
 }
 
-d3.tsv('data.tsv', function(error, data) {
-  let judete = []
-  let buffer = null
-  let judet = null
-  data.forEach(function(row) {
-    if(row.judet) {
-      if(buffer) flush()
-      buffer = {}
-      judet = row.judet
-    }
-    delete row.judet
-    buffer[row.an] = row
-    delete row.an
-  })
-  flush()
-
-  function flush() {
-    judete.push({
-      name: judet,
-      years: buffer,
-    })
-    buffer = []
+d3.tsv('sector3.tsv', function(error, data) {
+  let rows = {}
+  for(let row of data) {
+    rows[row.an] = row
   }
-
-  renderJudet(judete[0])
+  renderJudet(rows)
 })
 
 async function main() {

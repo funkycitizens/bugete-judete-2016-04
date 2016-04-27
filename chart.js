@@ -1,4 +1,5 @@
-export default function chart_js(d3, container, judet) {
+export default function chart_js(d3, container, rows) {
+  console.log(rows)
 
   let boxHeight = 34200
   let paddingTop = 2000
@@ -6,20 +7,21 @@ export default function chart_js(d3, container, judet) {
   let width = 55880
   let height = boxHeight - paddingTop - paddingBottom
 
+
   var cols = [
-    'servicii_publice_generale',
     'aparare',
+    'asigurari_sociale',
+    'mediu',
     'invatamant',
     'sanatate',
-    'cultura',
-    'asigurari_sociale',
     'dezvoltare_locuinte_mediu',
-    'mediu',
+    'servicii_publice_generale',
+    'cultura',
     'energie',
     'transporturi',
     'altele',
   ]
-  var years = [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014]
+  var years = [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016]
   var yearWidth = (width)/years.length
   var yearSlotPadding = yearWidth/20
 
@@ -55,14 +57,14 @@ export default function chart_js(d3, container, judet) {
       .attr('transform', `translate(${0},${paddingTop})`)
 
   x.domain(cols)
-  y.domain([0, d3.max(years, (y) => d3.max(cols, (c) => +judet.years[y][c]))])
+  y.domain([0, d3.max(years, (y) => d3.max(cols, (c) => +rows[y][c]))])
 
   let eachYear = svg.selectAll('.year')
       .data(years)
     .enter().append('g')
 
   eachYear.each(function(g, i) {
-        var year = judet.years[years[i]]
+        var year = rows[years[i]]
         d3.select(this)
           .attr('transform', `translate(${yearWidth*i},0)`)
           .selectAll('.bar')
@@ -80,7 +82,7 @@ export default function chart_js(d3, container, judet) {
     .append('g')
       .attr('transform', `translate(300,${height + 200})`)
     .append('g')
-      .attr('transform', 'scale(1.2)')
+      .attr('transform', 'scale(.95,1)')
     .append('path')
       .attr('style', 'stroke:#373435;stroke-width:17.64; fill:none;fill-rule:nonzero')
       .attr('transform', 'translate(-7639.18,-3598.2182)')
@@ -108,15 +110,4 @@ export default function chart_js(d3, container, judet) {
   svg.selectAll('.axis path').attr('style', 'stroke-width: 20px; fill: none; stroke: #000; shape-rendering: crispEdges')
   svg.selectAll('.axis line').attr('style', 'stroke-width: 20px; fill: none; stroke: #000; shape-rendering: crispEdges')
 
-  //function multiYearLine(c) {
-  //  var coords = years.map((year, i) => {
-  //    return [yearWidth*i + x(c), height - y(+judet.years[year][c])]
-  //  })
-  //  return `M ${coords.join(' ')}`
-  //}
-
-  //svg.selectAll('.multiYearLine')
-  //    .data(cols)
-  //  .enter().append('path')
-  //    .attr('d', multiYearLine)
 }

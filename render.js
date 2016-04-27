@@ -64,6 +64,15 @@ function withJsdom(func) {
   })
 }
 
+const alignMap = {
+  'PIB-text': 'end',
+  'mun-text': 'end',
+  'comune-text': 'end',
+  'jud-text': 'start',
+  'pop-text': 'start',
+  'orase-text': 'start',
+}
+
 async function renderPage(master, judet) {
   return await withJsdom((window) => {
     let d3 = window.d3
@@ -81,7 +90,10 @@ async function renderPage(master, judet) {
 
     for(let key of Object.keys(judet.indicators)) {
       let value = judet.indicators[key]
-      zebox.select(`#${key}`).html(value)
+      let align = alignMap[key] || 'middle'
+      zebox.select(`#${key}`)
+          .attr('text-anchor', align)
+          .html(value)
     }
 
     return header + zebox.html()
